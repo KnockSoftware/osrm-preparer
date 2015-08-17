@@ -1,4 +1,6 @@
-if [[ -z "$AWS_ACCESS_KEY_ID" || -z "$AWS_SECRET_ACCESS_KEY" || -z "AWS_DEFAULT_REGION" ]]; then
+#!/bin/bash
+
+if [[ -z "$AWS_ACCESS_KEY_ID" || -z "$AWS_SECRET_ACCESS_KEY" || -z "$AWS_DEFAULT_REGION" ]]; then
   echo "Need AWS credentials in environment"
   exit 1
 fi
